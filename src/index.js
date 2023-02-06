@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* BrowserRouter provides us with the ability to use the routes inside our application */}
+    <BrowserRouter> 
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
